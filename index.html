@@ -21,7 +21,7 @@
     {% endfor %}
     <div class="container">
       <h1>Welcome to POKEMON API</h1>
-      <form action="/" method="post" class="input-group mb-3">
+      <form class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1">URL</span>
         <input
           type="text"
@@ -30,9 +30,12 @@
           placeholder="https://www.google.com/"
           aria-label="Url"
           aria-describedby="basic-addon1"
+          id="url-destination"
         />
-        <button type="submit" class="btn btn-primary">Convert</button>
+        <button type="submit" class="btn btn-primary" id="convert-button">Convert</button>
       </form>
+      <div id="web-frame-container">
+      </div>
     </div>
 
     <script
@@ -40,5 +43,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
